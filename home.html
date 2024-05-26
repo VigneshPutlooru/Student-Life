@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life @Gitam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  media="screen and (max-width: 977px)" href="phone.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="stylesheet" href="loginStyle.css"> -->
+</head>
+<body>
+  <header id="navbar">
+    <!-- <img src="ice-removebg-preview.png" alt="error" id="logo"> -->
+    <div class="logo"><img src="assets/logo-small.jpg" alt="error"></div>
+    <span>Student Life</span>
+    <nav>
+      <a href="#Home" class="active">Home</a>
+      <a href="#Past">Question Papers</a>
+      <a href="#Experiences">Experiences</a>
+      <a href="#Find">Lost something?</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div id="main">
+    <section id="Home">
+      <div id="home">
+          <div id="inbox">
+            <span><h1>Hi Scholar!</h1></span>
+            <!-- <Span><h1>I'm Lakshmi Vignesh,</h1></Span> -->
+            <h1><\ <span class="animate"></span>></h1>
+            <h5>A one stop platform for some of your student life needs. Access to previous year quesion papers, Have a look at some past placement and interview Experiences, A mere chance to find lost things and much more.
+            </h5>
+            <a href="VIGNESH RESUME.pdf" download="Broucher">Explore</a>
+          </div>
+      </div>
+    </section> 
+    <hr> 
+    <section id="Past">
+      <div class="container" id="container">
+        <div class="form-container sign-up">
+          <form>
+            <h1>Upload</h1>
+            <span>Upload by Semester and year</span>
+            <input type="number" placeholder="Semester" id="sem">
+            <input type="text" placeholder="Course Code" id="Code">
+            <input type="date" placeholder="Date" id="date">
+            <input type="file" placeholder="Upload" id="Upload">
+            <button onclick="//todo" type="submit">Upload</button>
+          </form>
+        </div>
+        <div class="form-container sign-in">
+          <form>
+          <h1>download</h1>
+          <span>Enter Semester, year and Course Code</span>
+          <input type="number" placeholder="sem" id="semd">
+          <input type="number" placeholder="year" id="yeard">
+          <input type="text" placeholder="Course Code" id="coded">
+          <!-- <a href="#">Forgot Your Password?</a> -->
+          <button onclick="auth()" type="submit">download</button>
+        </form>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-left toggle-panel">
+              <h1>Hi Scholar!</h1>
+              <p>download previous year question papers</p>
+              <button class="hidden" id="login">download</button>
+            </div>
+            <div class="toggle-right toggle-panel">
+              <h1>Hello Scholar!</h1>
+              <p>Upload your Question script and help your juniors!</p>
+              <button class="hidden" id="register">Upload</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -=------------------------------------------------------------------------------------------------ -->
+<hr>
+    <section id="Experiences">
+      <p>Experiences</p>
+      <div class="containerE">
+        <div class="box" id="box1">
+          <span>Alstom</span>
+          <a href="https://youtu.be/rTy1GL5hXsY?si=J9rgYchVsJkIOlMy" target="_blank"><img src="assets/alstom.webp" alt=""></a>
+        </div>
+        <div class="box" id="box2">
+          <span>SAP</span>
+          <a href="https://youtu.be/_4Vmy57PKB8?si=T03K4FDszrIB6EgS" target="_blank"><img src="assets/sap.webp" alt=""></a>
+        </div>
+        <div class="box" id="box3">
+          <span>Cognizant</span>
+          <a href="https://youtu.be/H1Vxt4wZeIk?si=XbbRRfqTSUi-nCs4" target="_blank"><img src="assets/cognisant.webp" alt=""></a>
+        </div>
+        <div class="box" id="box4">
+          <span>Apziva</span>
+          <a href="https://youtu.be/w3tP6RVQkS8?si=ktOsdPYKNNusGkYg" target="_blank"><img src="assets/apziva.webp" alt=""></a>
+        </div>
+        <div class="box" id="box5">
+          <span>Dell</span>
+          <a href="https://youtu.be/qDIBaBlq5d8?si=mTBwyzfzd5EqzLOW" target="_blank"><img src="assets/dell.webp" alt=""></a>
+        </div>
+        <div class="box" id="box6">
+          <span>Harman</span>
+          <a href="https://youtu.be/yEwDvXDZjLI?si=uJZkfmGzrliGlu_f" target="_blank"><img src="assets/harman.webp" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <!-- -=------------------------------------------------------------------------------------------------ -->
+    <hr>
+      
+    <section id="Find">
+      <h4>Post Your Query</h4>
+      <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button id="send-button">Post</button>
+    </div>
+    </section>
+    <hr>
+    <section id="footer">
+
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/profile.php?id=100074951731236">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/__Karthik_m">
+          <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_vignesh_royal__/https://www.linkedin.com/in/lakshmi-vignesh-putlooru-025276290/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_vignesh_royal__/">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+        </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#Home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#Past">Question Papers</a></li>
+        <li class="menu__item"><a class="menu__link" href="#Experiences">Experiences</a></li>
+        <li class="menu__item"><a class="menu__link" href="#Find">Find</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+        
+      </ul>
+      <p>&copy;2024 Lakshmi Vignesh | All Rights Reserved</p>
+    </footer>
+  </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
